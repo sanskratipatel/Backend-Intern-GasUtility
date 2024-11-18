@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #000; /* Black background */
+    color: #f4f4f4; /* Light gray text for contrast */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e74c3c; /* Vibrant red color for the header text */
+    margin-left: 20px;
+}
+
+form {
+    background-color: #222; /* Dark gray form background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    background-color: #333; /* Slightly lighter gray */
+    color: #f4f4f4; /* Light text color */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555; /* Medium gray border */
+    border-radius: 4px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa; /* Subtle placeholder color */
+}
+
+form button {
+    background-color: #e74c3c; /* Vibrant red button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222; /* Dark gray table background */
+    color: #f4f4f4; /* Light text for table content */
+}
+
+table, th, td {
+    border: 1px solid #555; /* Medium gray border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e74c3c; /* Red background for headers */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #333; /* Slightly lighter rows for contrast */
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e74c3c; /* Vibrant red for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c0392b; /* Darker red on hover */
+}
+
+.request-detail {
+    background-color: #222; /* Dark gray background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}

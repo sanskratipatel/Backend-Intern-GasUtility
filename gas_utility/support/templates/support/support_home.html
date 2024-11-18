@@ -1,0 +1,117 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #281818;
+            color: #333;
+        }
+
+        header {
+            background-color: #262f6a;
+            color: rgb(219, 212, 212);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #070b1d;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgb(170, 156, 131);
+        }
+
+        h2 {
+            font-size: 2.5em; /* Increased size */
+            font-weight: bolder; /* Bold weight */
+            color: whitesmoke; /* Darker color */
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgb(170, 156, 131);
+            text-align: center; /* Centered text */
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center; /* Centered text */
+        }
+
+        .view-requests-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px auto;
+            background-color: #282d29; /* Green background */
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+        }
+
+        .view-requests-button:hover {
+            background-color: #4c4972; /* Darker green on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support Home</h1>
+    </header>
+    
+    <nav>
+       
+        <a href="{% url 'request_list' %}">View Requests</a>
+ 
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to the Support Page</h2>
+        <p>If you have any questions or need assistance, please feel free to browse through our support requests or contact us directly.</p>
+        <p>We are here to help you!</p>
+        <a href="{% url 'request_list' %}" class="view-requests-button">View Requests</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
